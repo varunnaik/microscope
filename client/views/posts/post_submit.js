@@ -12,7 +12,7 @@ Template.postSubmit.events({
 	    if (error)
 		return alert(error.reason);
 
-	    Router.go('postPage', post);
+	    Router.go('postPage', {_id: id});
 	});
     }
 });
